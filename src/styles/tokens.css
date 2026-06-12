@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap');
+
+:root {
+  --bg:        #0A0E17;
+  --surface:   #111827;
+  --border:    #1E293B;
+  --mint:      #6EE7B7;
+  --text:      #E2E8F0;
+  --muted:     #64748B;
+  --font-mono: 'DM Mono', monospace;
+  --font-body: 'Inter', 'Noto Sans JP', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
