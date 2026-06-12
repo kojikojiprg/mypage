@@ -5,18 +5,18 @@
 
 export const profile = {
   // ロゴに表示するイニシャル（例: "YN"）
-  initials: "YN",
+  initials: "KY",
 
   // 表示名（日英）
   name: {
-    ja: "Your Name",
-    en: "Your Name",
+    ja: "横山 晃士 (よこやま こうじ)",
+    en: "Koji Yokoyama",
   },
 
   // 肩書き
   title: {
-    ja: "Researcher & Engineer",
-    en: "Researcher & Engineer",
+    ja: "Researcher, Engineer, and Consultant",
+    en: "Researcher, Engineer, and Consultant",
   },
 
   // 自己紹介文（短め）
@@ -27,8 +27,8 @@ export const profile = {
 
   // 顔写真のパス（public/ 以下に配置してください）
   // 例: "/images/avatar.jpg"
-  avatar: null, // null のままだとデフォルトアイコンが表示されます
+  avatar: "src/components/assets/face.jpg",
 
   // メールアドレス
-  email: "your@email.com",
+  email: "kojikoji.prg[at]gmail.com",
 };

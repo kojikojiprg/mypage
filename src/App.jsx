@@ -42,7 +42,7 @@ export default function App() {
         </div>
       </main>
       <footer style={{ borderTop: "1px solid var(--border)", padding: 24, textAlign: "center", fontFamily: "var(--font-mono)", fontSize: "0.72rem", color: "var(--muted)", letterSpacing: "0.04em" }}>
-        © 2025 Your Name · Built with React · GitHub Pages
+        © 2026 Koji Yokoyama. All rights reserved.
       </footer>
     </>
   );

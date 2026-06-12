@@ -5,52 +5,35 @@
 
 export const education = [
   {
-    period: "20XX",
-    role: { ja: "博士（工学）", en: "Ph.D. in Engineering" },
-    detail: { ja: "○○大学大学院 — 情報工学専攻", en: "Dept. of Computer Science, XX University" },
+    period: "2025",
+    role: { ja: "博士（情報学）", en: "Ph.D. in Computer Science" },
+    detail: { ja: "京都大学大学院 — 情報学研究科 - 社会情報学専攻", en: "Graduate School of Informatics, Kyoto University - Social Informatics" },
   },
   {
-    period: "20XX",
-    role: { ja: "修士（工学）", en: "M.Eng." },
-    detail: { ja: "○○大学大学院 — 情報工学専攻", en: "Dept. of Computer Science, XX University" },
+    period: "2022",
+    role: { ja: "修士（情報学）", en: "M.S. in Computer Science" },
+    detail: { ja: "京都大学大学院 — 情報学研究科 - 社会情報学専攻", en: "Graduate School of Informatics, Kyoto University - Social Informatics" },
+  },
+  {
+    period: "2017",
+    role: { ja: "学士（機械工学）", en: "B.S. in Machine Engineering" },
+    detail: { ja: "豊橋技術科学大学 - 機械工学課程", en: "Dept. Mechanical Engineering, Toyota Institution of Technology" },
+  },
+  {
+    period: "2015",
+    role: { ja: "準学士（工学）", en: "A.S. in Computer Science" },
+    detail: { ja: "岐阜工業高等専門学校 — 電子制御工学科", en: "Dept. Electronic Control Engineering, Gifu National College of Technology" },
   },
 ];
 
 export const jobs = [
-  {
-    period: "2023 – present",
-    role: { ja: "研究員 / MLエンジニア", en: "Research Engineer" },
-    detail: {
-      ja: "動画解析基盤の設計・実装。社内研究チームのリード。",
-      en: "Designed and implemented video analysis infrastructure. Led internal research team.",
-    },
-    stack: ["PyTorch", "Python", "AWS", "Docker"],
-  },
-  {
-    period: "2022 – 2023",
-    role: { ja: "機械学習エンジニア", en: "Machine Learning Engineer" },
-    detail: {
-      ja: "推薦システムの改善。A/Bテスト設計・運用。",
-      en: "Improved recommendation systems. Designed and operated A/B tests.",
-    },
-    stack: ["TensorFlow", "GCP", "Spark"],
-  },
-  {
-    period: "2020 – 2022",
-    role: { ja: "リサーチインターン", en: "Research Intern" },
-    detail: {
-      ja: "行動認識モデルの実装・評価。論文執筆補助。",
-      en: "Implemented and evaluated action recognition models. Assisted in paper writing.",
-    },
-    stack: ["PyTorch", "OpenCV", "MATLAB"],
-  },
-  {
-    period: "2019",
-    role: { ja: "ソフトウェアエンジニア（インターン）", en: "Software Engineer (Intern)" },
-    detail: {
-      ja: "Webアプリケーションのバックエンド開発。",
-      en: "Backend development for web applications.",
-    },
-    stack: ["Python", "Django", "PostgreSQL"],
-  },
+  // {
+  //   period: "2023 – present",
+  //   role: { ja: "研究員 / MLエンジニア", en: "Research Engineer" },
+  //   detail: {
+  //     ja: "動画解析基盤の設計・実装。社内研究チームのリード。",
+  //     en: "Designed and implemented video analysis infrastructure. Led internal research team.",
+  //   },
+  //   stack: ["PyTorch", "Python", "AWS", "Docker"],
+  // },
 ];
