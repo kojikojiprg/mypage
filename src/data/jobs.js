@@ -29,7 +29,7 @@ export const education = [
 export const jobs = [
   {
     period: "2026.04 – 2026.06",
-    role: { ja: "データサイエンティスト（自動車メーカー）", en: "Data Scientist (Automotive Manufacturer)" },
+    role: { ja: "データサイエンティスト（大手自動車メーカー）", en: "Data Scientist (Major Automotive Manufacturer)" },
     detail: {
       ja: "車向け遠隔操作アプリのログ解析と海外子会社向けスキルトランスファー。GA4・BigQuery・Amplitude を用いたアプリのログ解析と改善提案を行い、SQL構文自動生成プログラムで業務効率化。データポイントの設計仕様の検討・作成も行い、設計・解析手順を海外子会社のメンバーへ移管した。",
       en: "Log analysis of a vehicle remote-control app and skill transfer to an overseas subsidiary. Analyzed app logs with GA4, BigQuery and Amplitude, proposed improvements, and built an SQL auto-generation tool to streamline work. Designed and created the analysis workflow specifications, and transferred the design and analysis workflow to overseas members.",
@@ -38,7 +38,7 @@ export const jobs = [
   },
   {
     period: "2026.01 – 2026.03",
-    role: { ja: "データサイエンティスト（自動車部品メーカー）", en: "Data Scientist (Auto Parts Manufacturer)" },
+    role: { ja: "データサイエンティスト（大手自動車メーカー）", en: "Data Scientist (Major Automotive Manufacturer)" },
     detail: {
       ja: "工場の作業監視カメラ映像に対する行動認識・異常検知モデルの開発・評価、および手順書作成自動化AIの検討。STGCN++ を Optuna で最適化し precision/recall を 0.9 以上に向上、推論から評価までをパイプライン化してシステムへ組み込んだ。LLM/VLM を用いた手順書生成パイプラインの設計も実施。",
       en: "Developed and evaluated action recognition and anomaly detection models for factory surveillance video, and studied an AI pipeline to automate work-instruction generation. Optimized STGCN++ with Optuna to exceed 0.9 precision/recall, and built an inference-to-evaluation pipeline integrated into the system. Designed an LLM/VLM-based pipeline for procedure generation.",
@@ -47,7 +47,7 @@ export const jobs = [
   },
   {
     period: "2025.08 – 2025.12",
-    role: { ja: "特別研究員（自動車部品メーカー）", en: "Research Fellow (Auto Parts Manufacturer)" },
+    role: { ja: "特別研究員（大手自動車メーカー）", en: "Research Fellow (Major Automotive Manufacturer)" },
     detail: {
       ja: "俯瞰カメラ映像から歩行を解析し健康診断を行うシステムの開発。YOLOv11 による検出・トラッキング・ポーズ推定と、足首高さの時間推移へのウェーブレット変換で歩行者を抽出。協調動作不全に関わる特徴量を抽出し、検出モデルの正答率は90%を超えた。",
       en: "Built a system that performs health screening from gait captured by overhead cameras. Detected, tracked, and pose-estimated people with YOLOv11, extracting walkers via wavelet transform of ankle-height time series. Extracted gait coordination features and achieved over 90% accuracy in the detection model.",
@@ -101,7 +101,7 @@ export const jobs = [
   },
   {
     period: "2017.04 – 2019.08",
-    role: { ja: "ソフトウェアエンジニア（医療機器メーカー）", en: "Software Engineer (Medical Device Manufacturer)" },
+    role: { ja: "組み込み・アプリケーションエンジニア（医療機器メーカー）", en: "Embedded and Application Engineer (Medical Device Manufacturer)" },
     detail: {
       ja: "医療機器の組み込み開発および連携アプリケーション開発。C言語によるリアルタイムOS・モータ制御・通信モジュールの実装を、仕様設計からテストまで一貫して担当。WPF/MVVM を用いた .NET アプリケーションも開発し、非同期処理による複数装置との通信を実装した。",
       en: "Embedded development of medical devices and companion applications. Handled the full cycle from specification to testing, implementing real-time OS, motor control, and communication modules in C. Also developed .NET applications with WPF/MVVM, implementing asynchronous communication with multiple devices.",
