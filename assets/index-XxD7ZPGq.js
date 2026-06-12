@@ -39,7 +39,6 @@ Error generating stack: `+e.message+`
           height: 2px; background: var(--mint);
           animation: blink-bar 1.2s step-end infinite;
         }
-        @keyframes blink-bar { 0%,100% { opacity:1; } 50% { opacity:0; } }
         .lang-toggle {
           display: flex; border: 1px solid var(--border);
           border-radius: 3px; overflow: hidden; margin-left: 20px;
