@@ -14,6 +14,14 @@ export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
   {
     date: "2026-06-13",
+    type: "job",
+    desc: {
+      ja: "職務経歴書をもとに職歴・学歴・スキルを更新（Experience ページ）",
+      en: "Updated work history, education, and skills based on resume (Experience page)",
+    },
+  },
+  {
+    date: "2026-06-13",
     type: "content",
     desc: {
       ja: "Research ページに研究概念と2つの研究テーマ（個人行動モデル・チーム協調モデル）を追加",
