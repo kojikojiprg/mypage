@@ -21,7 +21,7 @@ export const education = [
   },
   {
     period: "2015",
-    role: { ja: "準学士（工学）", en: "A.S. in Computer Science" },
+    role: { ja: "準学士（工学）", en: "A.S. in Engineering" },
     detail: { ja: "岐阜工業高等専門学校 — 電子制御工学科", en: "Dept. Electronic Control Engineering, Gifu National College of Technology" },
   },
 ];
