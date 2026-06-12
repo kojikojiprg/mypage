@@ -27,7 +27,7 @@ export const profile = {
 
   // 顔写真のパス（public/ 以下に配置してください）
   // 例: "/images/avatar.jpg"
-  avatar: "src/components/assets/face.jpg",
+  avatar: "/mypage/images/avatar.jpg",
 
   // メールアドレス
   email: "kojikoji.prg[at]gmail.com",
