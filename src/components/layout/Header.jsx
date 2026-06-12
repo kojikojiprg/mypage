@@ -124,7 +124,7 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
       <header className="header">
         <div className="header-inner">
           <button className="logo" onClick={() => handleTabClick("home")}>
-            <span>Koji Yokoyama</span>, PH.D.
+            <span>Koji Yokoyama</span>, Ph.D.
           </button>
           <nav className="tabbar">
             {TABS.map(tab => (

@@ -12,6 +12,14 @@
 
 export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
+  {
+    date: "2026-06-13",
+    type: "content",
+    desc: {
+      ja: "Research ページに研究概念と2つの研究テーマ（個人行動モデル・チーム協調モデル）を追加",
+      en: "Added research concept and two research themes (individual behavior model, team coordination model) to Research page",
+    },
+  },
   // {
   //   date: "2025-07-01",
   //   type: "paper",
