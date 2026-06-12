@@ -31,10 +31,10 @@ export const jobs = [
     period: "2026.04 – 2026.06",
     role: { ja: "データサイエンティスト（自動車メーカー）", en: "Data Scientist (Automotive Manufacturer)" },
     detail: {
-      ja: "車向け遠隔操作アプリのログ解析と海外子会社向けスキルトランスファー。GA4・BigQuery を用いたアプリのログ解析と改善提案を行い、SQL構文自動生成プログラムで業務効率化。解析手順を海外子会社のメンバーへ移管した。",
-      en: "Log analysis of a vehicle remote-control app and skill transfer to an overseas subsidiary. Analyzed app logs with GA4 and BigQuery, proposed improvements, and built an SQL auto-generation tool to streamline work. Transferred the analysis workflow to overseas members.",
+      ja: "車向け遠隔操作アプリのログ解析と海外子会社向けスキルトランスファー。GA4・BigQuery・Amplitude を用いたアプリのログ解析と改善提案を行い、SQL構文自動生成プログラムで業務効率化。データポイントの設計仕様の検討・作成も行い、設計・解析手順を海外子会社のメンバーへ移管した。",
+      en: "Log analysis of a vehicle remote-control app and skill transfer to an overseas subsidiary. Analyzed app logs with GA4, BigQuery and Amplitude, proposed improvements, and built an SQL auto-generation tool to streamline work. Designed and created the analysis workflow specifications, and transferred the design and analysis workflow to overseas members.",
     },
-    stack: ["Python", "SQL", "GA4", "BigQuery"],
+    stack: ["Python", "SQL", "GA4", "BigQuery", "Amplitude"],
   },
   {
     period: "2026.01 – 2026.03",
