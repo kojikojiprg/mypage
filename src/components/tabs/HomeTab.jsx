@@ -2,7 +2,7 @@
 // HomeTab.jsx — Home タブ
 // ============================================================
 import { profile } from "../../data/profile";
-import { snsLinks, twitterUsername } from "../../data/sns";
+import { snsLinks, xUsername } from "../../data/sns";
 import { news } from "../../data/news";
 import { changelog, changelogTypeColors } from "../../data/changelog";
 
@@ -49,19 +49,18 @@ export default function HomeTab({ t }) {
         </div>
       </div>
 
-      {/* ── Twitter Timeline ── */}
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>TWITTER TIMELINE</p>
+      {/* ── X Timeline ── */}
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>X TIMELINE</p>
       <div style={{ marginBottom: 52, maxWidth: 550 }}>
-        {/* Twitter公式ウィジェット埋め込みエリア */}
-        {/* 実装時: <script async src="https://platform.twitter.com/widgets.js"></script> を index.html に追加し、 */}
-        {/* 以下の div を <a class="twitter-timeline" href="https://twitter.com/{username}"> に置き換えてください */}
         <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 4, padding: 32, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10, minHeight: 200, opacity: 0.5 }}>
-          <span style={{ fontSize: "1.5rem" }}>𝕏</span>
-          <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.78rem", color: "var(--muted)" }}>@{twitterUsername}</span>
-          <span style={{ fontSize: "0.72rem", color: "var(--muted)", textAlign: "center" }}>
-            Twitter ウィジェット（実装時に差し替え）<br />
-            <code style={{ fontSize: "0.65rem", opacity: 0.7 }}>src/data/sns.js の twitterUsername を更新してください</code>
-          </span>
+          <a className="x-timeline"
+            data-theme="dark"
+            data-chrome="noheader nofooter noborders transparent"
+            data-tweet-limit="5"
+            href={`https://x.com/${xUsername}`}
+          >
+            Posts by @{xUsername}
+          </a>
         </div>
       </div>
 

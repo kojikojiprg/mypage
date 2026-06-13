@@ -1,7 +1,7 @@
 // ============================================================
 // news.js — Newsフィード
 // 新しいものを先頭に追加してください
-// source: "Zenn" | "Twitter" | "Note" | "Blog" など自由
+// source: "Zenn" | "X" | "Note" | "Blog" など自由
 // ============================================================
 
 export const news = [
@@ -15,12 +15,12 @@ export const news = [
   //   url: "https://zenn.dev/yourname/articles/example",
   // },
   // {
-  //   source: "Twitter",
+  //   source: "X",
   //   date: "2025-05-28",
   //   title: {
   //     ja: "手術映像解析のデモを公開しました",
   //     en: "Released a demo of surgical video analysis",
   //   },
-  //   url: "https://twitter.com/yourname/status/example",
+  //   url: "https://x.com/yourname/status/example",
   // },
 ];
