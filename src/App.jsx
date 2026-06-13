@@ -8,8 +8,8 @@ import Header from "./components/layout/Header";
 import HomeTab from "./components/tabs/HomeTab";
 import ExperienceTab from "./components/tabs/ExperienceTab";
 import FreelanceTab from "./components/tabs/FreelanceTab";
-import HobbiesTab from "./components/tabs/HobbiesTab";
 import ResearchTab from "./components/tabs/ResearchTab";
+import HobbiesTab from "./components/tabs/HobbiesTab";
 import ContactTab from "./components/tabs/ContactTab";
 import UpdatesTab from "./components/tabs/UpdatesTab";
 
@@ -20,9 +20,9 @@ export default function App() {
   const renderTab = () => {
     switch (activeTab) {
       case "home":       return <HomeTab t={t} setActiveTab={setActiveTab} />;
-      case "research":   return <ResearchTab t={t} />;
       case "experience": return <ExperienceTab t={t} />;
       case "freelance":  return <FreelanceTab t={t} setActiveTab={setActiveTab} />;
+      case "research":   return <ResearchTab t={t} />;
       case "hobbies":    return <HobbiesTab t={t} />;
       case "contact":    return <ContactTab t={t} />;
       case "updates":    return <UpdatesTab t={t} />;
