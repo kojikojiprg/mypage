@@ -129,7 +129,7 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
         <div className="header-inner">
           <button className="logo" onClick={() => handleTabClick("home")}>
             <img src="/mypage/favicon/favicon.svg" alt="favicon" className="logo-icon" />
-            <span>Koji Yokoyama</span>, Ph.D.
+            <span style={{ marginRight: "-8px" }}>Koji Yokoyama</span>, Ph.D.
           </button>
           <nav className="tabbar">
             {TABS.map(tab => (
