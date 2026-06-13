@@ -9,7 +9,7 @@ export const profile = {
 
   // 表示名（日英）
   name: {
-    ja: "横山 晃士 (よこやま こうじ)",
+    ja: "横山 晃士",
     en: "Koji Yokoyama",
   },
 

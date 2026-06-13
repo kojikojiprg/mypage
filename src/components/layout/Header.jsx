@@ -25,7 +25,7 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
       <style>{`
         .header {
           position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-          height: 80px;
+          height: clamp(52px, 8vw, 80px);
           background: rgba(10,14,23,0.92);
           backdrop-filter: blur(12px);
           border-bottom: 1px solid var(--border);
@@ -37,23 +37,25 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
           display: flex; align-items: center; justify-content: space-between;
         }
         .logo {
-          font-family: var(--font-mono); font-size: 1.25rem; font-weight: 500;
+          font-family: var(--font-mono); font-size: clamp(0.75rem, 2.5vw, 1.25rem); font-weight: 500;
           color: var(--text); cursor: pointer; letter-spacing: 0.04em;
           background: none; border: none;
           display: flex; align-items: center; gap: 8px;
+          white-space: nowrap; flex-shrink: 0;
         }
-        .logo-icon { width: 80px; height: 80px; }
+        .logo-icon { width: clamp(32px, 6vw, 80px); height: clamp(32px, 6vw, 80px); }
         .logo span { color: var(--mint); }
         .tabbar { display: flex; align-items: center; gap: 2px; }
         .tab-btn {
-          font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.06em;
+          font-family: var(--font-mono); font-size: clamp(0.6rem, 1.2vw, 0.78rem); letter-spacing: 0.06em;
           background: none; border: none; color: var(--muted);
-          cursor: pointer; padding: 6px 14px; position: relative; transition: color .15s;
+          cursor: pointer; padding: 6px clamp(6px, 1.2vw, 14px); position: relative; transition: color .15s;
+          white-space: nowrap;
         }
         .tab-btn:hover { color: var(--text); }
         .tab-btn.active { color: var(--mint); }
         .tab-btn.active::after {
-          content: ''; position: absolute; bottom: -1px; left: 14px; right: 14px;
+          content: ''; position: absolute; bottom: -1px; left: clamp(6px, 1.2vw, 14px); right: clamp(6px, 1.2vw, 14px);
           height: 2px; background: var(--mint);
           animation: blink-bar 1.2s step-end infinite;
         }
