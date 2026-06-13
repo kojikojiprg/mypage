@@ -12,16 +12,16 @@ export const papers = [
     venue: "7th International Conference on Activity and Behavior Computing (ABC 2025)",
     award: { ja: "Best Paper Award", en: "Best Paper Award" },
     title: {
-      ja: "手術チームの術中状況理解のための手術室監視映像からの半教師あり役割分類",
+      ja: "Semi-Supervised Role Classification from Operating Room Surveillance Videos for Intraoperative Situation Analysis",
       en: "Semi-Supervised Role Classification from Operating Room Surveillance Videos for Intraoperative Situation Analysis",
     },
   },
   {
     year: 2025,
     category: "journal",
-    venue: "Applied Intelligence (採択済み)",
+    venue: "Applied Intelligence",
     title: {
-      ja: "手術室映像における時空間的な教師なし個人クラスタリング",
+      ja: "Spatio-Temporal Unsupervised Individual Clustering for Operating Room Videos",
       en: "Spatio-Temporal Unsupervised Individual Clustering for Operating Room Videos",
     },
   },
@@ -50,7 +50,7 @@ export const papers = [
     category: "journal",
     venue: "Advanced Biomedical Engineering",
     title: {
-      ja: "グループ行動認識のための手術室監視映像解析",
+      ja: "Operating Room Surveillance Video Analysis for Group Activity Recognition",
       en: "Operating Room Surveillance Video Analysis for Group Activity Recognition",
     },
   },
@@ -60,7 +60,7 @@ export const papers = [
     venue: "MEDINFO 2023",
     award: { ja: "Best Student Paper Award (第2位)", en: "Best Student Paper Award (Second Place)" },
     title: {
-      ja: "時系列予測に基づく手術室での個人行動異常推定",
+      ja: "Individual Activity Anomaly Estimation in Operating Rooms Based on Time-Sequential Prediction",
       en: "Individual Activity Anomaly Estimation in Operating Rooms Based on Time-Sequential Prediction",
     },
   },
@@ -70,7 +70,7 @@ export const papers = [
     category: "journal",
     venue: "Advanced Biomedical Engineering",
     title: {
-      ja: "手術チームの術中状態理解のための器具受け渡しとグループ注意の認識",
+      ja: "Recognition of Instrument Passing and Group Attention for Understanding Intraoperative State of Surgical Team",
       en: "Recognition of Instrument Passing and Group Attention for Understanding Intraoperative State of Surgical Team",
     },
   },
