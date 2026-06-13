@@ -50,7 +50,7 @@ export default function HomeTab({ t }) {
       </div>
 
       {/* ── X Timeline ── */}
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>X TIMELINE</p>
+      {/* <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>X TIMELINE</p>
       <div style={{ marginBottom: 52, maxWidth: 550 }}>
         <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 4, padding: 32, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10, minHeight: 200, opacity: 0.5 }}>
           <a className="twitter-timeline"
@@ -62,7 +62,7 @@ export default function HomeTab({ t }) {
             Posts by @{xUsername}
           </a>
         </div>
-      </div>
+      </div> */}
 
 
       {/* ── News ── */}
