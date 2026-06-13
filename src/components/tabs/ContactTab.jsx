@@ -9,7 +9,7 @@ export default function ContactTab({ t }) {
     <div style={{ maxWidth: 520, margin: "0 auto" }}>
       <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>CONTACT</p>
       <h2 style={{ fontFamily: "var(--font-mono)", fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 600, color: "var(--text)", marginBottom: 24, lineHeight: 1.25 }}>
-        {t({ ja: "話しましょう", en: "Let's Talk" })}
+        {t({ ja: "ご連絡お待ちしています", en: "Let's Talk" })}
       </h2>
       <p style={{ color: "var(--muted)", fontSize: "0.95rem", lineHeight: 1.9, marginBottom: 40 }}>
         {t({ ja: "研究の話でも、仕事の話でも、シーシャの話でも。気軽にどうぞ。", en: "Research, work, or shisha — feel free to reach out." })}

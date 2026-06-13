@@ -14,6 +14,22 @@ export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
   {
     date: "2026-06-13",
+    type: "feature",
+    desc: {
+      ja: "Freelance ページに代表事例3件と相談〜発注の5ステップを追加",
+      en: "Added 3 representative case studies and a 5-step inquiry-to-engagement flow to the Freelance page",
+    },
+  },
+  {
+    date: "2026-06-13",
+    type: "feature",
+    desc: {
+      ja: "Freelance ページの対応業務に数値成果ベースの実績と技術スタックを追加、相談導線を強化",
+      en: "Added results-backed case examples and tech stacks to Freelance services, and strengthened the consultation CTA",
+    },
+  },
+  {
+    date: "2026-06-13",
     type: "job",
     desc: {
       ja: "職務経歴書をもとに職歴・学歴・スキルを更新（Experience ページ）",
