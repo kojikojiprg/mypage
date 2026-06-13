@@ -25,7 +25,7 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
       <style>{`
         .header {
           position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-          height: 56px;
+          height: 80px;
           background: rgba(10,14,23,0.92);
           backdrop-filter: blur(12px);
           border-bottom: 1px solid var(--border);
@@ -37,10 +37,12 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
           display: flex; align-items: center; justify-content: space-between;
         }
         .logo {
-          font-family: var(--font-mono); font-size: 0.9rem; font-weight: 500;
+          font-family: var(--font-mono); font-size: 1.25rem; font-weight: 500;
           color: var(--text); cursor: pointer; letter-spacing: 0.04em;
           background: none; border: none;
+          display: flex; align-items: center; gap: 8px;
         }
+        .logo-icon { width: 80px; height: 80px; }
         .logo span { color: var(--mint); }
         .tabbar { display: flex; align-items: center; gap: 2px; }
         .tab-btn {
@@ -87,6 +89,7 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
         .sidebar-logo {
           font-family: var(--font-mono); font-size: 0.9rem; color: var(--text);
           padding: 0 24px 24px; border-bottom: 1px solid var(--border); margin-bottom: 12px;
+          display: flex; align-items: center; gap: 8px;
         }
         .sidebar-logo span { color: var(--mint); }
         .sidebar-tab {
@@ -123,6 +126,7 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
       <header className="header">
         <div className="header-inner">
           <button className="logo" onClick={() => handleTabClick("home")}>
+            <img src="/mypage/favicon/favicon.svg" alt="favicon" className="logo-icon" />
             <span>Koji Yokoyama</span>, Ph.D.
           </button>
           <nav className="tabbar">
@@ -146,7 +150,10 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
 
       <div className={`sidebar-overlay ${menuOpen ? "open" : ""}`} onClick={() => setMenuOpen(false)} />
       <aside className={`sidebar ${menuOpen ? "open" : ""}`}>
-        <div className="sidebar-logo">YN<span>.</span></div>
+        <div className="sidebar-logo">
+          <img src="/mypage/favicon/favicon.svg" alt="favicon" className="logo-icon" />
+          KY<span>.</span>
+        </div>
         {TABS.map(tab => (
           <button
             key={tab.id}
