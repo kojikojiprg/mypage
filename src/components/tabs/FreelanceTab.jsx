@@ -104,11 +104,6 @@ export default function FreelanceTab({ t, setActiveTab }) {
         ))}
       </div>
 
-      <button onClick={() => setActiveTab("contact")}
-        style={{ fontFamily: "var(--font-mono)", fontSize: "0.85rem", background: "var(--mint)", color: "#0A0E17", padding: "12px 28px", borderRadius: 2, border: "none", cursor: "pointer", fontWeight: 600, letterSpacing: "0.04em" , marginBottom: 40}}>
-        {t({ ja: "相談する →", en: "Get in touch →" })}
-      </button>
-
       {/* Conditions */}
       <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 4, padding: "20px 24px", marginBottom: 40 }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px,1fr))", gap: 20 }}>
@@ -125,6 +120,11 @@ export default function FreelanceTab({ t, setActiveTab }) {
           ))}
         </div>
       </div>
+
+      <button onClick={() => setActiveTab("contact")}
+        style={{ fontFamily: "var(--font-mono)", fontSize: "0.85rem", background: "var(--mint)", color: "#0A0E17", padding: "12px 28px", borderRadius: 2, border: "none", cursor: "pointer", fontWeight: 600, letterSpacing: "0.04em" , marginBottom: 40}}>
+        {t({ ja: "相談する →", en: "Get in touch →" })}
+      </button>
 
       {/* Process */}
       <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.8rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 4 }}>PROCESS</p>
