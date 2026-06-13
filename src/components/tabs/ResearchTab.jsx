@@ -37,6 +37,38 @@ export default function ResearchTab({ t }) {
       {/* ---- 論文リスト ---- */}
       {papers.length > 0 && (
         <>
+          <style>{`
+            .paper-row {
+              display: grid;
+              grid-template-columns: 52px 96px 120px 1fr auto;
+              gap: 12px;
+              padding: 16px 0;
+              border-bottom: 1px solid var(--border);
+              align-items: start;
+            }
+            .paper-meta { display: contents; }
+            .paper-title-cell { line-height: 1.5; }
+            @media (max-width: 600px) {
+              .paper-row {
+                grid-template-columns: 1fr auto;
+                gap: 6px 8px;
+              }
+              .paper-meta {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                grid-column: 1 / -1;
+              }
+              .paper-title-cell {
+                grid-column: 1;
+              }
+              .paper-link-cell {
+                grid-column: 2;
+                grid-row: 2;
+                padding-top: 2px;
+              }
+            }
+          `}</style>
           <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>
             PUBLICATIONS
           </p>
@@ -44,11 +76,13 @@ export default function ResearchTab({ t }) {
             {papers.map((p, i) => {
               const cat = paperCategoryStyles[p.category] || paperCategoryStyles.domestic;
               return (
-              <div key={i} style={{ display: "grid", gridTemplateColumns: "52px 96px 120px 1fr auto", gap: 12, padding: "16px 0", borderBottom: "1px solid var(--border)", alignItems: "start" }}>
-                <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.78rem", color: "var(--mint)", paddingTop: 2 }}>{p.year}</span>
-                <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.68rem", color: cat.color, border: `1px solid ${cat.color}50`, background: "var(--surface)", borderRadius: 2, padding: "3px 6px", alignSelf: "start", textAlign: "center" }}>{t(cat.label)}</span>
-                <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.68rem", color: "var(--muted)", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 2, padding: "3px 6px", alignSelf: "start", textAlign: "center", wordBreak: "break-word" }}>{p.venue}</span>
-                <span style={{ lineHeight: 1.5 }}>
+              <div key={i} className="paper-row">
+                <div className="paper-meta">
+                  <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.78rem", color: "var(--mint)", paddingTop: 2 }}>{p.year}</span>
+                  <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.68rem", color: cat.color, border: `1px solid ${cat.color}50`, background: "var(--surface)", borderRadius: 2, padding: "3px 6px", alignSelf: "start", textAlign: "center" }}>{t(cat.label)}</span>
+                  <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.68rem", color: "var(--muted)", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 2, padding: "3px 6px", alignSelf: "start", textAlign: "center" }}>{p.venue}</span>
+                </div>
+                <span className="paper-title-cell">
                   <span style={{ fontSize: "0.92rem", color: "var(--text)" }}>{t(p.title)}</span>
                   {p.award && (
                     <span style={{ display: "inline-block", marginLeft: 8, fontFamily: "var(--font-mono)", fontSize: "0.65rem", color: "#FBBF24", border: "1px solid #FBBF2460", borderRadius: 2, padding: "1px 6px", verticalAlign: "middle" }}>
@@ -56,14 +90,14 @@ export default function ResearchTab({ t }) {
                     </span>
                   )}
                 </span>
-                {p.url && (
-                  <a href={p.url} target="_blank" rel="noreferrer"
+                {p.url ? (
+                  <a href={p.url} target="_blank" rel="noreferrer" className="paper-link-cell"
                     style={{ fontFamily: "var(--font-mono)", fontSize: "0.72rem", color: "var(--muted)", textDecoration: "none", paddingTop: 2, whiteSpace: "nowrap" }}
                     onMouseEnter={e => e.currentTarget.style.color = "var(--mint)"}
                     onMouseLeave={e => e.currentTarget.style.color = "var(--muted)"}>
                     ↗
                   </a>
-                )}
+                ) : <span className="paper-link-cell" />}
               </div>
               );
             })}
