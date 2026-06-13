@@ -6,7 +6,7 @@ import { hobbies } from "../../data/hobbies";
 export default function HobbiesTab({ t }) {
   return (
     <div style={{ maxWidth: 760, margin: "0 auto" }}>
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>HOBBIES</p>
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>HOBBIES</p>
       <h2 style={{ fontFamily: "var(--font-mono)", fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 600, color: "var(--text)", marginBottom: 36, lineHeight: 1.25 }}>
         {t({ ja: "研究室の外", en: "Outside the Lab" })}
       </h2>

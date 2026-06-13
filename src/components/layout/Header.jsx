@@ -64,7 +64,7 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
           border-radius: 3px; overflow: hidden; margin-left: 20px;
         }
         .lang-btn {
-          font-family: var(--font-mono); font-size: 0.7rem;
+          font-family: var(--font-mono); font-size: 1.0rem;
           background: none; border: none; color: var(--muted);
           cursor: pointer; padding: 4px 10px; transition: background .15s, color .15s;
         }
@@ -109,7 +109,7 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
           border-top: 1px solid var(--border); display: flex; gap: 8px;
         }
         .sidebar-lang-btn {
-          font-family: var(--font-mono); font-size: 0.7rem;
+          font-family: var(--font-mono); font-size: 1.0rem;
           background: none; border: 1px solid var(--border); border-radius: 2px;
           color: var(--muted); cursor: pointer; padding: 4px 12px;
           transition: background .15s, color .15s;

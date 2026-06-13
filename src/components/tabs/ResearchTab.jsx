@@ -9,7 +9,7 @@ export default function ResearchTab({ t }) {
     <div style={{ maxWidth: 760, margin: "0 auto" }}>
 
       {/* ---- ラベル ---- */}
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>
         RESEARCH
       </p>
 
@@ -24,7 +24,7 @@ export default function ResearchTab({ t }) {
       </p>
 
       {/* ---- 研究テーマ ---- */}
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>
         THEMES
       </p>
 
@@ -69,7 +69,7 @@ export default function ResearchTab({ t }) {
               }
             }
           `}</style>
-          <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>
+          <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>
             PUBLICATIONS
           </p>
           <div>
@@ -156,7 +156,7 @@ function ThemeCard({ theme, t }) {
         {theme.tags.map(tag => (
           <span key={tag} style={{
             fontFamily: "var(--font-mono)",
-            fontSize: "0.7rem",
+            fontSize: "1.0rem",
             background: "var(--surface)",
             border: "1px solid var(--border)",
             borderRadius: 2,
@@ -175,7 +175,7 @@ function ThemeCard({ theme, t }) {
 // ---- セクションラベル ----
 function SubLabel({ children }) {
   return (
-    <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.12em", color: "var(--muted)", marginBottom: 12 }}>
+    <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.12em", color: "var(--muted)", marginBottom: 12 }}>
       {typeof children === "string" ? children.toUpperCase() : children}
     </p>
   );

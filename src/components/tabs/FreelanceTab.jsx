@@ -6,7 +6,7 @@ import { services } from "../../data/services";
 export default function FreelanceTab({ t, setActiveTab }) {
   return (
     <div style={{ maxWidth: 760, margin: "0 auto" }}>
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>FREELANCE</p>
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>FREELANCE</p>
       <h2 style={{ fontFamily: "var(--font-mono)", fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 600, color: "var(--text)", marginBottom: 24, lineHeight: 1.25 }}>
         {t({ ja: "お仕事募集中", en: "Available for Work" })}
       </h2>

@@ -7,7 +7,7 @@ import { snsLinks } from "../../data/sns";
 export default function ContactTab({ t }) {
   return (
     <div style={{ maxWidth: 520, margin: "0 auto" }}>
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>CONTACT</p>
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>CONTACT</p>
       <h2 style={{ fontFamily: "var(--font-mono)", fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 600, color: "var(--text)", marginBottom: 24, lineHeight: 1.25 }}>
         {t({ ja: "話しましょう", en: "Let's Talk" })}
       </h2>

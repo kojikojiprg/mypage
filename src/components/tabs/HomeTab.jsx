@@ -24,7 +24,7 @@ export default function HomeTab({ t }) {
           }
         </div>
         <div style={{ flex: 1, minWidth: 220 }}>
-          <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 6 }}>
+          <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 6 }}>
             {t(profile.title)}
           </p>
           <h1 style={{ fontFamily: "var(--font-mono)", fontSize: "clamp(1.6rem,4vw,2.4rem)", fontWeight: 700, color: "var(--text)", marginBottom: 12, letterSpacing: "-0.02em" }}>
@@ -50,7 +50,7 @@ export default function HomeTab({ t }) {
       </div>
 
       {/* ── X Timeline ── */}
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>X TIMELINE</p>
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>X TIMELINE</p>
       <div style={{ marginBottom: 52, maxWidth: 550 }}>
         <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 4, padding: 32, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10, minHeight: 200, opacity: 0.5 }}>
           <a className="twitter-timeline"
@@ -66,7 +66,7 @@ export default function HomeTab({ t }) {
 
 
       {/* ── News ── */}
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>NEWS & UPDATES</p>
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>NEWS & UPDATES</p>
       <div style={{ marginBottom: 52 }}>
         {news.map((n, i) => (
           <a key={i} href={n.url || "#"} target="_blank" rel="noreferrer"
@@ -81,7 +81,7 @@ export default function HomeTab({ t }) {
       </div>
 
       {/* ── Changelog ── */}
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>CHANGELOG</p>
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>CHANGELOG</p>
       <div>
         {changelog.map((c, i) => {
           const typeStyle = changelogTypeColors[c.type] || changelogTypeColors.content;
