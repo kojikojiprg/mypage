@@ -116,7 +116,7 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
           transition: background .15s, color .15s;
         }
         .sidebar-lang-btn.active { background: var(--mint); color: #0A0E17; font-weight: 500; border-color: var(--mint); }
-        @media (max-width: 768px) {
+        @media (max-width: 1100px) {
           .tabbar { display: none; }
           .hamburger { display: block; }
           .lang-toggle { display: none; }
