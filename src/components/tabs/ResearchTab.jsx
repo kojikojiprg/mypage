@@ -156,7 +156,7 @@ function ThemeCard({ theme, t }) {
         {theme.tags.map(tag => (
           <span key={tag} style={{
             fontFamily: "var(--font-mono)",
-            fontSize: "1.0rem",
+            fontSize: "0.8rem",
             background: "var(--surface)",
             border: "1px solid var(--border)",
             borderRadius: 2,

@@ -35,7 +35,7 @@ export default function ExperienceTab({ t }) {
               <p style={{ fontSize: "0.85rem", color: "var(--muted)", marginBottom: 10, lineHeight: 1.6 }}>{t(j.detail)}</p>
               <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
                 {j.stack.map(s => (
-                  <span key={s} style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", color: "var(--mint)", border: "1px solid rgba(110,231,183,0.25)", borderRadius: 2, padding: "2px 8px" }}>{s}</span>
+                  <span key={s} style={{ fontFamily: "var(--font-mono)", fontSize: "0.8rem", color: "var(--mint)", border: "1px solid rgba(110,231,183,0.25)", borderRadius: 2, padding: "2px 8px" }}>{s}</span>
                 ))}
               </div>
             </div>

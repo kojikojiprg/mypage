@@ -154,7 +154,7 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
       <aside className={`sidebar ${menuOpen ? "open" : ""}`}>
         <div className="sidebar-logo">
           <img src="/mypage/favicon/favicon.svg" alt="favicon" className="logo-icon" />
-          <span style={{ marginRight: "-8px" }}>KY</span>, Ph.D.
+          {/* <span style={{ marginRight: "-8px" }}>KY</span>, Ph.D. */}
         </div>
         {TABS.map(tab => (
           <button
