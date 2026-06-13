@@ -38,15 +38,11 @@ export default function HomeTab({ t }) {
           {snsLinks.map(s => (
             <a key={s.label} href={s.href} target="_blank" rel="noreferrer" title={s.label}
               style={{ display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--font-mono)", fontSize: "0.75rem", color: "var(--muted)", border: "1px solid var(--border)", borderRadius: 3, padding: "4px 10px", textDecoration: "none", transition: "color .15s, border-color .15s" }}
-              onMouseEnter={e => { e.currentTarget.style.color = "var(--mint)"; e.currentTarget.style.borderColor = "var(--mint)"; e.currentTarget.querySelector("img").style.filter = "brightness(0) saturate(100%) invert(83%) sepia(45%) saturate(400%) hue-rotate(103deg) brightness(95%)"; }}
-              onMouseLeave={e => { e.currentTarget.style.color = "var(--muted)"; e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.querySelector("img").style.filter = `brightness(0) saturate(100%) invert(100%)`; }}>
-              <img
-                src={`https://cdn.simpleicons.org/${s.iconSlug}`}
-                alt={s.label}
-                width={14}
-                height={14}
-                style={{ filter: "brightness(0) saturate(100%) invert(100%)", transition: "filter .15s", flexShrink: 0 }}
-              />
+              onMouseEnter={e => { e.currentTarget.style.color = "var(--mint)"; e.currentTarget.style.borderColor = "var(--mint)"; e.currentTarget.querySelector("svg").style.opacity = "1"; }}
+              onMouseLeave={e => { e.currentTarget.style.color = "var(--muted)"; e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.querySelector("svg").style.opacity = "0.5"; }}>
+              <svg viewBox="0 0 24 24" width={14} height={14} fill="currentColor" style={{ opacity: 0.5, transition: "opacity .15s", flexShrink: 0 }}>
+                <path d={s.svgPath} />
+              </svg>
               {s.label}
             </a>
           ))}

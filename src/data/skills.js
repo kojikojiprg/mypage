@@ -18,7 +18,7 @@ export const skills = [
   },
   {
     cat: { ja: "データ基盤", en: "Data" },
-    items: ["BigQuery", "GA4", "MySQL"],
+    items: ["BigQuery", "GA4", "Amplitude", "MySQL"],
   },
   {
     cat: { ja: "インフラ", en: "Infra" },

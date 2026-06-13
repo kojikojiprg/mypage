@@ -83,7 +83,7 @@ export const jobs = [
   },
   {
     period: "2021.10 – 2022.11",
-    role: { ja: "フリーランス / インターン（航空画像解析企業）", en: "Freelance / Intern (Aerial Image Analysis Company)" },
+    role: { ja: "データサイエンティスト（航空画像解析企業）", en: "Data Scientist (Aerial Image Analysis Company)" },
     detail: {
       ja: "ドローン航空画像の前処理アルゴリズム開発。大サイズ画像をグリッド分割・並列化した分散型透視投影でメモリ使用率50%削減・処理時間40%短縮。GPS情報を用いた高精度スティッチングアルゴリズムを開発し社内パイプラインへ組み込み、3Dモデリング手法の調査も実施した。",
       en: "Developed preprocessing algorithms for drone aerial imagery. Built a distributed perspective-projection method via grid splitting and parallelization, cutting memory use by 50% and processing time by 40%. Developed a high-accuracy GPS-based stitching algorithm integrated into the internal pipeline, and surveyed 3D modeling methods.",
