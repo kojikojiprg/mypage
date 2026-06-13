@@ -6,10 +6,10 @@ import "./styles/tokens.css";
 import { useLang } from "./hooks/useLang";
 import Header from "./components/layout/Header";
 import HomeTab from "./components/tabs/HomeTab";
-import ResearchTab from "./components/tabs/ResearchTab";
 import ExperienceTab from "./components/tabs/ExperienceTab";
 import FreelanceTab from "./components/tabs/FreelanceTab";
 import HobbiesTab from "./components/tabs/HobbiesTab";
+import ResearchTab from "./components/tabs/ResearchTab";
 import ContactTab from "./components/tabs/ContactTab";
 
 export default function App() {
@@ -19,10 +19,10 @@ export default function App() {
   const renderTab = () => {
     switch (activeTab) {
       case "home":       return <HomeTab t={t} />;
-      case "research":   return <ResearchTab t={t} />;
       case "experience": return <ExperienceTab t={t} />;
       case "freelance":  return <FreelanceTab t={t} setActiveTab={setActiveTab} />;
       case "hobbies":    return <HobbiesTab t={t} />;
+      case "research":   return <ResearchTab t={t} />;
       case "contact":    return <ContactTab t={t} />;
       default:           return <HomeTab t={t} />;
     }

@@ -5,10 +5,10 @@ import { useState } from "react";
 
 const TABS = [
   { id: "home",       label: { ja: "Home",       en: "Home" } },
-  { id: "research",   label: { ja: "Research",   en: "Research" } },
   { id: "experience", label: { ja: "Experience", en: "Experience" } },
   { id: "freelance",  label: { ja: "Freelance",  en: "Freelance" } },
   { id: "hobbies",    label: { ja: "Hobbies",    en: "Hobbies" } },
+  { id: "research",   label: { ja: "Research",   en: "Research" } },
   { id: "contact",    label: { ja: "Contact",    en: "Contact" } },
 ];
 
