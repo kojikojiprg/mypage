@@ -47,7 +47,7 @@ export const jobs = [
   },
   {
     period: "2025.08 – 2025.12",
-    role: { ja: "特別研究員（大手自動車メーカー）", en: "Research Fellow (Major Automotive Manufacturer)" },
+    role: { ja: "データサイエンティスト（大手自動車メーカー）", en: "Data Scientist (Major Automotive Manufacturer)" },
     detail: {
       ja: "俯瞰カメラ映像から歩行を解析し健康診断を行うシステムの開発。YOLOv11 による検出・トラッキング・ポーズ推定と、足首高さの時間推移へのウェーブレット変換で歩行者を抽出。協調動作不全に関わる特徴量を抽出し、検出モデルの正答率は90%を超えた。",
       en: "Built a system that performs health screening from gait captured by overhead cameras. Detected, tracked, and pose-estimated people with YOLOv11, extracting walkers via wavelet transform of ankle-height time series. Extracted gait coordination features and achieved over 90% accuracy in the detection model.",
