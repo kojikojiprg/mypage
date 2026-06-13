@@ -53,7 +53,7 @@ export default function HomeTab({ t }) {
       <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>X TIMELINE</p>
       <div style={{ marginBottom: 52, maxWidth: 550 }}>
         <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 4, padding: 32, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10, minHeight: 200, opacity: 0.5 }}>
-          <a className="x-timeline"
+          <a className="twitter-timeline"
             data-theme="dark"
             data-chrome="noheader nofooter noborders transparent"
             data-tweet-limit="5"
