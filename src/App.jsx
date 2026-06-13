@@ -11,6 +11,7 @@ import FreelanceTab from "./components/tabs/FreelanceTab";
 import HobbiesTab from "./components/tabs/HobbiesTab";
 import ResearchTab from "./components/tabs/ResearchTab";
 import ContactTab from "./components/tabs/ContactTab";
+import UpdatesTab from "./components/tabs/UpdatesTab";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("home");
@@ -18,12 +19,13 @@ export default function App() {
 
   const renderTab = () => {
     switch (activeTab) {
-      case "home":       return <HomeTab t={t} />;
+      case "home":       return <HomeTab t={t} setActiveTab={setActiveTab} />;
+      case "research":   return <ResearchTab t={t} />;
       case "experience": return <ExperienceTab t={t} />;
       case "freelance":  return <FreelanceTab t={t} setActiveTab={setActiveTab} />;
       case "hobbies":    return <HobbiesTab t={t} />;
-      case "research":   return <ResearchTab t={t} />;
       case "contact":    return <ContactTab t={t} />;
+      case "updates":    return <UpdatesTab t={t} />;
       default:           return <HomeTab t={t} />;
     }
   };

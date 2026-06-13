@@ -16,6 +16,14 @@ export const changelog = [
     date: "2026-06-13",
     type: "feature",
     desc: {
+      ja: "News・Changelog を最新3件プレビュー表示に変更し、全件表示用の Updates タブを追加",
+      en: "News and Changelog now show a 3-item preview on Home; added Updates tab for full history",
+    },
+  },
+  {
+    date: "2026-06-13",
+    type: "feature",
+    desc: {
       ja: "Freelance ページに代表事例3件と相談〜発注の5ステップを追加",
       en: "Added 3 representative case studies and a 5-step inquiry-to-engagement flow to the Freelance page",
     },

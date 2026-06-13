@@ -10,6 +10,7 @@ const TABS = [
   { id: "hobbies",    label: { ja: "Hobbies",    en: "Hobbies" } },
   { id: "research",   label: { ja: "Research",   en: "Research" } },
   { id: "contact",    label: { ja: "Contact",    en: "Contact" } },
+  { id: "updates",    label: { ja: "Updates",    en: "Updates" } },
 ];
 
 export default function Header({ activeTab, setActiveTab, lang, setLang }) {

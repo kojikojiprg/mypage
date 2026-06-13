@@ -6,7 +6,9 @@ import { snsLinks, xUsername } from "../../data/sns";
 import { news } from "../../data/news";
 import { changelog, changelogTypeColors } from "../../data/changelog";
 
-export default function HomeTab({ t }) {
+const PREVIEW_COUNT = 5;
+
+export default function HomeTab({ t, setActiveTab }) {
   return (
     <div style={{ maxWidth: 760, margin: "0 auto" }}>
 
@@ -66,9 +68,19 @@ export default function HomeTab({ t }) {
 
 
       {/* ── News ── */}
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>NEWS & UPDATES</p>
+      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 12 }}>
+        <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", margin: 0 }}>NEWS & UPDATES</p>
+        {news.length > PREVIEW_COUNT && (
+          <button onClick={() => setActiveTab("updates")}
+            style={{ fontFamily: "var(--font-mono)", fontSize: "0.72rem", letterSpacing: "0.06em", color: "var(--muted)", background: "none", border: "none", cursor: "pointer", padding: 0, transition: "color .15s" }}
+            onMouseEnter={e => e.currentTarget.style.color = "var(--mint)"}
+            onMouseLeave={e => e.currentTarget.style.color = "var(--muted)"}>
+            {t({ ja: "すべて見る →", en: "see all →" })}
+          </button>
+        )}
+      </div>
       <div style={{ marginBottom: 52 }}>
-        {news.map((n, i) => (
+        {news.slice(0, PREVIEW_COUNT).map((n, i) => (
           <a key={i} href={n.url || "#"} target="_blank" rel="noreferrer"
             style={{ display: "grid", gridTemplateColumns: "88px 60px 1fr", gap: 16, alignItems: "center", padding: "13px 0", borderBottom: "1px solid var(--border)", textDecoration: "none" }}
             onMouseEnter={e => e.currentTarget.style.opacity = "0.75"}
@@ -78,12 +90,30 @@ export default function HomeTab({ t }) {
             <span style={{ fontSize: "0.88rem", color: "var(--text)" }}>{t(n.title)}</span>
           </a>
         ))}
+        {news.length > PREVIEW_COUNT && (
+          <button onClick={() => setActiveTab("updates")}
+            style={{ width: "100%", marginTop: 2, padding: "10px 0", fontFamily: "var(--font-mono)", fontSize: "0.72rem", letterSpacing: "0.06em", color: "var(--muted)", background: "none", border: "none", borderBottom: "1px solid var(--border)", cursor: "pointer", textAlign: "center", transition: "color .15s" }}
+            onMouseEnter={e => e.currentTarget.style.color = "var(--mint)"}
+            onMouseLeave={e => e.currentTarget.style.color = "var(--muted)"}>
+            {t({ ja: `他 ${news.length - PREVIEW_COUNT} 件を見る →`, en: `${news.length - PREVIEW_COUNT} more →` })}
+          </button>
+        )}
       </div>
 
       {/* ── Changelog ── */}
-      <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>CHANGELOG</p>
+      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 12 }}>
+        <p style={{ fontFamily: "var(--font-mono)", fontSize: "1.0rem", letterSpacing: "0.16em", color: "var(--mint)", margin: 0 }}>CHANGELOG</p>
+        {changelog.length > PREVIEW_COUNT && (
+          <button onClick={() => setActiveTab("updates")}
+            style={{ fontFamily: "var(--font-mono)", fontSize: "0.72rem", letterSpacing: "0.06em", color: "var(--muted)", background: "none", border: "none", cursor: "pointer", padding: 0, transition: "color .15s" }}
+            onMouseEnter={e => e.currentTarget.style.color = "var(--mint)"}
+            onMouseLeave={e => e.currentTarget.style.color = "var(--muted)"}>
+            {t({ ja: "すべて見る →", en: "see all →" })}
+          </button>
+        )}
+      </div>
       <div>
-        {changelog.map((c, i) => {
+        {changelog.slice(0, PREVIEW_COUNT).map((c, i) => {
           const typeStyle = changelogTypeColors[c.type] || changelogTypeColors.content;
           return (
             <div key={i} style={{ display: "grid", gridTemplateColumns: "88px 68px 1fr", gap: 16, alignItems: "center", padding: "12px 0", borderBottom: "1px solid var(--border)" }}>
@@ -93,6 +123,14 @@ export default function HomeTab({ t }) {
             </div>
           );
         })}
+        {changelog.length > PREVIEW_COUNT && (
+          <button onClick={() => setActiveTab("updates")}
+            style={{ width: "100%", marginTop: 2, padding: "10px 0", fontFamily: "var(--font-mono)", fontSize: "0.72rem", letterSpacing: "0.06em", color: "var(--muted)", background: "none", border: "none", borderBottom: "1px solid var(--border)", cursor: "pointer", textAlign: "center", transition: "color .15s" }}
+            onMouseEnter={e => e.currentTarget.style.color = "var(--mint)"}
+            onMouseLeave={e => e.currentTarget.style.color = "var(--muted)"}>
+            {t({ ja: `他 ${changelog.length - PREVIEW_COUNT} 件を見る →`, en: `${changelog.length - PREVIEW_COUNT} more →` })}
+          </button>
+        )}
       </div>
     </div>
   );
