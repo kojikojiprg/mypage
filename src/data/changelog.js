@@ -14,6 +14,14 @@ export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
   {
     date: "2026-06-13",
+    type: "content",
+    desc: {
+      ja: "Home の自己紹介文を更新（行動認識研究への姿勢とフリーランス実績を明記）",
+      en: "Updated Home bio (life's research theme in action recognition + freelance achievements)",
+    },
+  },
+  {
+    date: "2026-06-13",
     type: "feature",
     desc: {
       ja: "News・Changelog を最新3件プレビュー表示に変更し、全件表示用の Updates タブを追加",
