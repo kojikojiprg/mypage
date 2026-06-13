@@ -5,12 +5,12 @@
 // ============================================================
 
 export const snsLinks = [
-  { label: "GitHub",       icon: "GH",  href: "https://github.com/kojikojiprg" },
-  { label: "Twitter / X",  icon: "𝕏",   href: "https://twitter.com/koji_y_ai" },
-  { label: "Zenn",         icon: "Z",   href: "https://zenn.dev/yourname" },
-  { label: "LinkedIn",     icon: "in",  href: "https://linkedin.com/in/koji-yokoyama-kyoyo-u" },
-  { label: "ORCID",        icon: "⊙",   href: "https://orcid.org/0009-0001-5389-5026" },
-  { label: "ResearchGate", icon: "Rg",  href: "https://researchgate.net/profile/Koji-Yokoyama-4" },
+  { label: "GitHub",       iconSlug: "github",      color: "#ffffff", href: "https://github.com/kojikojiprg" },
+  { label: "Twitter / X",  iconSlug: "x",           color: "#ffffff", href: "https://twitter.com/koji_y_ai" },
+  { label: "Zenn",         iconSlug: "zenn",        color: "#3EA8FF", href: "https://zenn.dev/yourname" },
+  { label: "LinkedIn",     iconSlug: "linkedin",    color: "#0A66C2", href: "https://linkedin.com/in/koji-yokoyama-kyoyo-u" },
+  { label: "ORCID",        iconSlug: "orcid",       color: "#A6CE39", href: "https://orcid.org/0009-0001-5389-5026" },
+  { label: "ResearchGate", iconSlug: "researchgate",color: "#00CCBB", href: "https://researchgate.net/profile/Koji-Yokoyama-4" },
 ];
 
 // Twitterウィジェット埋め込み用のユーザー名

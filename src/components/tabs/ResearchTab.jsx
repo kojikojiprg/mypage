@@ -2,7 +2,7 @@
 // ResearchTab.jsx — Research タブ
 // ============================================================
 import { researchConcept, researchThemes } from "../../data/research";
-import { papers } from "../../data/papers";
+import { papers, paperCategoryStyles } from "../../data/papers";
 
 export default function ResearchTab({ t }) {
   return (
@@ -24,9 +24,11 @@ export default function ResearchTab({ t }) {
       </p>
 
       {/* ---- 研究テーマ ---- */}
-      <SubLabel>{t({ ja: "研究テーマ", en: "THEMES" })}</SubLabel>
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>
+        THEMES
+      </p>
 
-      <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 0, marginBottom: 56 }}>
         {researchThemes.map((theme, i) => (
           <ThemeCard key={i} theme={theme} t={t} />
         ))}
@@ -35,13 +37,25 @@ export default function ResearchTab({ t }) {
       {/* ---- 論文リスト ---- */}
       {papers.length > 0 && (
         <>
-          <SubLabel style={{ marginTop: 56 }}>{t({ ja: "論文", en: "PUBLICATIONS" })}</SubLabel>
+          <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.16em", color: "var(--mint)", marginBottom: 12 }}>
+            PUBLICATIONS
+          </p>
           <div>
-            {papers.map((p, i) => (
-              <div key={i} style={{ display: "grid", gridTemplateColumns: "52px 88px 1fr auto", gap: 16, padding: "16px 0", borderBottom: "1px solid var(--border)", alignItems: "start" }}>
+            {papers.map((p, i) => {
+              const cat = paperCategoryStyles[p.category] || paperCategoryStyles.domestic;
+              return (
+              <div key={i} style={{ display: "grid", gridTemplateColumns: "52px 96px 120px 1fr auto", gap: 12, padding: "16px 0", borderBottom: "1px solid var(--border)", alignItems: "start" }}>
                 <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.78rem", color: "var(--mint)", paddingTop: 2 }}>{p.year}</span>
-                <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.72rem", color: "var(--muted)", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 2, padding: "3px 8px", alignSelf: "start", textAlign: "center" }}>{p.venue}</span>
-                <span style={{ fontSize: "0.92rem", color: "var(--text)", lineHeight: 1.5 }}>{t(p.title)}</span>
+                <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.68rem", color: cat.color, border: `1px solid ${cat.color}50`, background: "var(--surface)", borderRadius: 2, padding: "3px 6px", alignSelf: "start", textAlign: "center" }}>{t(cat.label)}</span>
+                <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.68rem", color: "var(--muted)", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 2, padding: "3px 6px", alignSelf: "start", textAlign: "center", wordBreak: "break-word" }}>{p.venue}</span>
+                <span style={{ lineHeight: 1.5 }}>
+                  <span style={{ fontSize: "0.92rem", color: "var(--text)" }}>{t(p.title)}</span>
+                  {p.award && (
+                    <span style={{ display: "inline-block", marginLeft: 8, fontFamily: "var(--font-mono)", fontSize: "0.65rem", color: "#FBBF24", border: "1px solid #FBBF2460", borderRadius: 2, padding: "1px 6px", verticalAlign: "middle" }}>
+                      🏆 {t(p.award)}
+                    </span>
+                  )}
+                </span>
                 {p.url && (
                   <a href={p.url} target="_blank" rel="noreferrer"
                     style={{ fontFamily: "var(--font-mono)", fontSize: "0.72rem", color: "var(--muted)", textDecoration: "none", paddingTop: 2, whiteSpace: "nowrap" }}
@@ -51,7 +65,8 @@ export default function ResearchTab({ t }) {
                   </a>
                 )}
               </div>
-            ))}
+              );
+            })}
           </div>
         </>
       )}
