@@ -6,6 +6,7 @@ import { useState } from "react";
 const TABS = [
   { id: "home",       label: { ja: "Home",       en: "Home" } },
   { id: "experience", label: { ja: "Experience", en: "Experience" } },
+  { id: "product",    label: { ja: "Product",    en: "Product" } },
   { id: "freelance",  label: { ja: "Freelance",  en: "Freelance" } },
   { id: "research",   label: { ja: "Research",   en: "Research" } },
   { id: "hobbies",    label: { ja: "Hobbies",    en: "Hobbies" } },

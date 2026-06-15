@@ -7,6 +7,7 @@ import { useLang } from "./hooks/useLang";
 import Header from "./components/layout/Header";
 import HomeTab from "./components/tabs/HomeTab";
 import ExperienceTab from "./components/tabs/ExperienceTab";
+import ProductTab from "./components/tabs/ProductTab";
 import FreelanceTab from "./components/tabs/FreelanceTab";
 import ResearchTab from "./components/tabs/ResearchTab";
 import HobbiesTab from "./components/tabs/HobbiesTab";
@@ -21,6 +22,7 @@ export default function App() {
     switch (activeTab) {
       case "home":       return <HomeTab t={t} setActiveTab={setActiveTab} />;
       case "experience": return <ExperienceTab t={t} />;
+      case "product":    return <ProductTab t={t} />;
       case "freelance":  return <FreelanceTab t={t} setActiveTab={setActiveTab} />;
       case "research":   return <ResearchTab t={t} />;
       case "hobbies":    return <HobbiesTab t={t} />;

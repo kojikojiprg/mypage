@@ -13,6 +13,14 @@
 export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
   {
+    date: "2026-06-15",
+    type: "feature",
+    desc: {
+      ja: "Product タブを新規追加",
+      en: "Added Product tab",
+    },
+  },
+  {
     date: "2026-06-13",
     type: "content",
     desc: {
