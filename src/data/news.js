@@ -5,6 +5,15 @@
 // ============================================================
 
 export const news = [
+  {
+    source: "GitHub",
+    date: "2026-06-17",
+    title: {
+      ja: "EASY.INC — \"Make It Easy\" をテーマにしたコーポレートサイトを公開",
+      en: "Released EASY.INC — a corporate site themed around 'Make It Easy'",
+    },
+    url: "https://kojikojiprg.github.io/easy-inc/",
+  },
   // {
   //   source: "Zenn",
   //   date: "2025-06-01",

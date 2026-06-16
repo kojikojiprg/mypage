@@ -17,57 +17,23 @@
 
 export const products = [
   {
-    id: "product-b",
-    status: "beta",
-    name: { ja: "プロダクト B（仮）", en: "Product B (placeholder)" },
-    tagline: {
-      ja: "一行キャッチコピーをここに書く",
-      en: "One-line pitch goes here",
-    },
-    desc: {
-      ja: "プロダクトの説明文。解決する課題・ターゲットユーザー・主な機能を2〜3文で。",
-      en: "Describe the product: the problem it solves, who it's for, and key features in 2-3 sentences.",
-    },
-    thumbnail: null,           // 画像を追加する場合: "/mypage/images/products/product-b.png"
-    demoUrl: null,
-    githubUrl: "https://github.com/kojikojiprg/product-b",
-    productHuntUrl: null,
-    pricing: { type: "oss" },
-    stack: ["Python", "FastAPI"],
-    launched: "2026-06",
-  },
-  {
-    id: "product-a",
+    id: "easy-inc",
     status: "live",
-    name: { ja: "プロダクト A（仮）", en: "Product A (placeholder)" },
+    name: { ja: "EASY.INC", en: "EASY.INC" },
     tagline: {
-      ja: "一行キャッチコピーをここに書く",
-      en: "One-line pitch goes here",
+      ja: "「イージー」を哲学に昇華したコーポレートサイト",
+      en: "A corporate site that elevates 'easy' to a philosophy",
     },
     desc: {
-      ja: "プロダクトの説明文。解決する課題・ターゲットユーザー・主な機能を2〜3文で。",
-      en: "Describe the product: the problem it solves, who it's for, and key features in 2-3 sentences.",
+      ja: "Make It Easy. ——すべての複雑さをシンプルへと変換することを使命とした架空企業 EASY.INC のコーポレートサイト。哲学・事業・チーム・採用・宗教まで、「イージー」の世界観を一貫したデザインで表現した実験的なWebサイト。\n'Easy, of the people, by the people, for the people.'",
+      en: "Make It Easy. — A corporate site for the fictional company EASY.INC, whose mission is to transform complexity into simplicity. An experimental site that expresses the 'easy' worldview across philosophy, services, team, careers, and even religion — with a unified design.\n'Easy, of the people, by the people, for the people.'",
     },
-    thumbnail: null,           // 画像を追加する場合: "/mypage/images/products/product-a.png"
-    demoUrl: "https://example.com/demo",
-    githubUrl: null,
+    thumbnail: "/mypage/images/thumbnails/easy-inc.jpg",
+    demoUrl: "https://kojikojiprg.github.io/easy-inc/",
+    githubUrl: "https://github.com/kojikojiprg/easy-inc",
     productHuntUrl: null,
-    pricing: {
-      type: "freemium",
-      plans: [
-        {
-          name: "Free",
-          price: { ja: "無料", en: "Free" },
-          features: ["機能 A", "機能 B"],
-        },
-        {
-          name: "Pro",
-          price: { ja: "¥980/月", en: "$6/mo" },
-          features: ["機能 A", "機能 B", "機能 C（Pro限定）"],
-        },
-      ],
-    },
-    stack: ["Next.js", "Python", "PostgreSQL"],
-    launched: "2026-01",
+    pricing: { type: "free" },
+    stack: ["React", "Vite", "React Router", "GitHub Pages"],
+    launched: "2024-12",
   },
 ];

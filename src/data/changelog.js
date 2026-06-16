@@ -13,6 +13,22 @@
 export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
   {
+    date: "2026-06-17",
+    type: "content",
+    desc: {
+      ja: "News に EASY.INC 公開のお知らせを追加",
+      en: "Added EASY.INC launch announcement to News",
+    },
+  },
+  {
+    date: "2026-06-17",
+    type: "feature",
+    desc: {
+      ja: "Product タブに EASY.INC を追加",
+      en: "Added EASY.INC to Product tab",
+    },
+  },
+  {
     date: "2026-06-15",
     type: "feature",
     desc: {
