@@ -144,8 +144,8 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
               </button>
             ))}
             <div className="lang-toggle">
-              <button className={`lang-btn ${lang === "ja" ? "active" : ""}`} onClick={() => setLang("ja")}>JA</button>
               <button className={`lang-btn ${lang === "en" ? "active" : ""}`} onClick={() => setLang("en")}>EN</button>
+              <button className={`lang-btn ${lang === "ja" ? "active" : ""}`} onClick={() => setLang("ja")}>JA</button>
             </div>
           </nav>
           <button className="hamburger" onClick={() => setMenuOpen(true)}>☰</button>
@@ -168,8 +168,8 @@ export default function Header({ activeTab, setActiveTab, lang, setLang }) {
           </button>
         ))}
         <div className="sidebar-lang">
-          <button className={`sidebar-lang-btn ${lang === "ja" ? "active" : ""}`} onClick={() => setLang("ja")}>JA</button>
           <button className={`sidebar-lang-btn ${lang === "en" ? "active" : ""}`} onClick={() => setLang("en")}>EN</button>
+          <button className={`sidebar-lang-btn ${lang === "ja" ? "active" : ""}`} onClick={() => setLang("ja")}>JA</button>
         </div>
       </aside>
     </>
