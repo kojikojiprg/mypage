@@ -25,8 +25,8 @@ export const products = [
       en: "A corporate site that elevates 'easy' to a philosophy",
     },
     desc: {
-      ja: "Make It Easy. ——すべての複雑さをシンプルへと変換することを使命とした架空企業 EASY.INC のコーポレートサイト。哲学・事業・チーム・採用・宗教まで、「イージー」の世界観を一貫したデザインで表現した実験的なWebサイト。\n'Easy, of the people, by the people, for the people.'",
-      en: "Make It Easy. — A corporate site for the fictional company EASY.INC, whose mission is to transform complexity into simplicity. An experimental site that expresses the 'easy' worldview across philosophy, services, team, careers, and even religion — with a unified design.\n'Easy, of the people, by the people, for the people.'",
+      ja: "Make It Easy. ——すべての複雑さをシンプルへと変換することを使命とした架空企業 EASY.INC のコーポレートサイト。哲学・事業・チーム・採用・宗教まで、「イージー」の世界観を一貫したデザインで表現した実験的なWebサイト。'Easy, of the people, by the people, for the people.' ※webデザイン・コーディングの練習ようのダミーサイト。",
+      en: "Make It Easy. — A corporate site for the fictional company EASY.INC, whose mission is to transform complexity into simplicity. An experimental site that expresses the 'easy' worldview across philosophy, services, team, careers, and even religion — with a unified design. 'Easy, of the people, by the people, for the people.' Note: This is a dummy site for web design and coding practice.",
     },
     thumbnail: "/mypage/images/thumbnails/easy-inc.jpg",
     demoUrl: "https://kojikojiprg.github.io/easy-inc/",
