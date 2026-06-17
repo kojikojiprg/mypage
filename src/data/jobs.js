@@ -17,7 +17,7 @@ export const education = [
   {
     period: "2017",
     role: { ja: "学士（機械工学）", en: "B.S. in Machine Engineering" },
-    detail: { ja: "豊橋技術科学大学 — 機械工学課程", en: "Dept. Mechanical Engineering, Toyota Institution of Technology" },
+    detail: { ja: "豊橋技術科学大学 — 機械工学課程", en: "Dept. Mechanical Engineering, Toyohashi Institution of Technology" },
   },
   {
     period: "2015",
