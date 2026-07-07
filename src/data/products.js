@@ -28,7 +28,7 @@ export const products = [
       ja: "タスク管理とアイデア整理を1つのアプリで。カンバンボードで進捗を管理しながら、マインドマップでアイデアを構造化・可視化できる。",
       en: "Task management and idea organization in one app. Track progress with kanban boards while structuring and visualizing ideas with mind maps.",
     },
-    thumbnail: "/mypage/images/products/taskmandala.png",
+    thumbnail: "/mypage/images/thumbnails/taskmandala.png",
     demoUrl: "https://taskmandala.vercel.app",
     githubUrl: null,
     productHuntUrl: "https://www.producthunt.com/products/taskmandala",
