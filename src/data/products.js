@@ -17,6 +17,45 @@
 
 export const products = [
   {
+    id: "taskmandala",
+    status: "live",
+    name: { ja: "TaskMandala", en: "TaskMandala" },
+    tagline: {
+      ja: "カンバンボードとマインドマップでタスクとアイデアを整理する",
+      en: "Organize tasks and ideas with kanban boards and mind maps",
+    },
+    desc: {
+      ja: "タスク管理とアイデア整理を1つのアプリで。カンバンボードで進捗を管理しながら、マインドマップでアイデアを構造化・可視化できる。",
+      en: "Task management and idea organization in one app. Track progress with kanban boards while structuring and visualizing ideas with mind maps.",
+    },
+    thumbnail: "/mypage/images/products/taskmandala.png",
+    demoUrl: "https://taskmandala.vercel.app",
+    githubUrl: null,
+    productHuntUrl: "https://www.producthunt.com/products/taskmandala",
+    pricing: {
+      type: "freemium",
+      plans: [
+        {
+          name: "Free",
+          price: { ja: "無料", en: "Free" },
+          features: ["最大3ボードまで"],
+        },
+        {
+          name: "Pro",
+          price: { ja: "$4.99/月", en: "$4.99/mo" },
+          features: ["ボード無制限"],
+        },
+        {
+          name: "Team",
+          price: { ja: "$9.99/月・1人あたり", en: "$9.99/mo per user" },
+          features: ["ボード無制限", "チームで共有・共同編集"],
+        },
+      ],
+    },
+    stack: ["Next.js", "Supabase", "React"],
+    launched: "2026-07",
+  },
+  {
     id: "easy-inc",
     status: "live",
     name: { ja: "EASY.INC", en: "EASY.INC" },

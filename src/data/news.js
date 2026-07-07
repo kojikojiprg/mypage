@@ -6,6 +6,15 @@
 
 export const news = [
   {
+    source: "Product Hunt",
+    date: "2026-07-07",
+    title: {
+      ja: "TaskMandalaをProduct Huntに投稿しました",
+      en: "Launched TaskMandala on Product Hunt",
+    },
+    url: "https://www.producthunt.com/products/taskmandala",
+  },
+  {
     source: "GitHub",
     date: "2026-06-17",
     title: {

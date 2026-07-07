@@ -13,6 +13,14 @@
 export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
   {
+    date: "2026-07-07",
+    type: "content",
+    desc: {
+      ja: "プロダクト「TaskMandala」を追加",
+      en: "Added product 'TaskMandala'",
+    },
+  },
+  {
     date: "2026-06-17",
     type: "content",
     desc: {
