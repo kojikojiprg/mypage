@@ -14,6 +14,14 @@ export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
   {
     date: "2026-08-11",
+    type: "fix",
+    desc: {
+      ja: "TaskMandalaの料金プランfeaturesが英語表示でも日本語のままだった不具合を修正",
+      en: "Fixed TaskMandala pricing plan features showing Japanese text even in English view",
+    },
+  },
+  {
+    date: "2026-08-11",
     type: "content",
     desc: {
       ja: "Product に「AI Theories」を追加",

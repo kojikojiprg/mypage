@@ -58,17 +58,24 @@ export const products = [
         {
           name: "Free",
           price: { ja: "無料", en: "Free" },
-          features: ["最大3ボードまで"],
+          features: [
+            { ja: "最大3ボードまで", en: "Up to 3 boards" },
+          ],
         },
         {
           name: "Pro",
           price: { ja: "$4.99/月", en: "$4.99/mo" },
-          features: ["ボード無制限"],
+          features: [
+            { ja: "ボード無制限", en: "Unlimited boards" },
+          ],
         },
         {
           name: "Team",
           price: { ja: "$9.99/月・1人あたり", en: "$9.99/mo per user" },
-          features: ["ボード無制限", "チームで共有・共同編集"],
+          features: [
+            { ja: "ボード無制限", en: "Unlimited boards" },
+            { ja: "チームで共有・共同編集", en: "Team sharing & collaborative editing" },
+          ],
         },
       ],
     },

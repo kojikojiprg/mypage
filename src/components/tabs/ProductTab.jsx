@@ -48,7 +48,7 @@ function PricingTable({ pricing, t }) {
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.85rem", color: "var(--mint)", marginBottom: 8 }}>{t(plan.price)}</p>
             <ul style={{ listStyle: "none", padding: 0 }}>
               {plan.features.map(f => (
-                <li key={f} style={{ fontSize: "0.78rem", color: "var(--muted)", lineHeight: 1.7 }}>— {f}</li>
+                <li key={f.en} style={{ fontSize: "0.78rem", color: "var(--muted)", lineHeight: 1.7 }}>— {t(f)}</li>
               ))}
             </ul>
           </div>
