@@ -6,6 +6,15 @@
 
 export const news = [
   {
+    source: "GitHub",
+    date: "2026-08-11",
+    title: {
+      ja: "LLM/VLM理論学習プロジェクト「AI Theories」を公開",
+      en: "Released 'AI Theories', a learning project on LLM/VLM theory",
+    },
+    url: "https://github.com/kojikojiprg/ai-theories",
+  },
+  {
     source: "Product Hunt",
     date: "2026-07-07",
     title: {

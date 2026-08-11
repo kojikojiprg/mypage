@@ -13,6 +13,14 @@
 export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
   {
+    date: "2026-08-11",
+    type: "content",
+    desc: {
+      ja: "Product に「AI Theories」を追加",
+      en: "Added 'AI Theories' to Products",
+    },
+  },
+  {
     date: "2026-07-07",
     type: "content",
     desc: {

@@ -17,6 +17,26 @@
 
 export const products = [
   {
+    id: "ai-theories",
+    status: "wip",
+    name: { ja: "AI Theories", en: "AI Theories" },
+    tagline: {
+      ja: "LLM/VLMの理論を学び、AIシステムを自作する学習プロジェクト",
+      en: "A learning project to master LLM/VLM theory and build AI systems from scratch",
+    },
+    desc: {
+      ja: "Transformerの基礎からLoRA・RLHF・DPO・VLMまで、LLM/VLMの理論をスクラッチ実装しながら学ぶ個人プロジェクト。学んだ理論を実際のWebアプリ（RAGアプリなど）に落とし込み、理論と実装の両輪で理解を深めている。",
+      en: "A personal project learning LLM/VLM theory — from Transformer foundations through LoRA, RLHF, DPO, and VLMs — via scratch implementations. Theory is then applied to working web apps (e.g. a RAG app), bridging theoretical understanding with hands-on system building.",
+    },
+    thumbnail: null,
+    demoUrl: null,
+    githubUrl: "https://github.com/kojikojiprg/ai-theories",
+    productHuntUrl: null,
+    pricing: null,
+    stack: ["Python", "PyTorch", "Jupyter", "Gradio", "Hugging Face Spaces"],
+    launched: "2026-08",
+  },
+  {
     id: "taskmandala",
     status: "live",
     name: { ja: "TaskMandala", en: "TaskMandala" },
