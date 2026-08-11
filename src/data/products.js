@@ -28,7 +28,7 @@ export const products = [
       ja: "Transformerの基礎からLoRA・RLHF・DPO・VLMまで、LLM/VLMの理論をスクラッチ実装しながら学ぶ個人プロジェクト。学んだ理論を実際のWebアプリ（RAGアプリなど）に落とし込み、理論と実装の両輪で理解を深めている。",
       en: "A personal project learning LLM/VLM theory — from Transformer foundations through LoRA, RLHF, DPO, and VLMs — via scratch implementations. Theory is then applied to working web apps (e.g. a RAG app), bridging theoretical understanding with hands-on system building.",
     },
-    thumbnail: null,
+    thumbnail: "/mypage/images/thumbnails/ai-theories.svg",
     demoUrl: null,
     githubUrl: "https://github.com/kojikojiprg/ai-theories",
     productHuntUrl: null,
