@@ -14,6 +14,14 @@ export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
   {
     date: "2026-08-11",
+    type: "fix",
+    desc: {
+      ja: "メニューバーの表記を「Product」から「Products」に修正",
+      en: "Changed menu bar label from 'Product' to 'Products'",
+    },
+  },
+  {
+    date: "2026-08-11",
     type: "content",
     desc: {
       ja: "AI Theoriesのサムネイル画像を追加",
