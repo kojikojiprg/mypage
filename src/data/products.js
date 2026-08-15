@@ -33,7 +33,7 @@ export const products = [
     siteUrl: "https://zenn.dev/kojikojiprg/books/ai-theories-roadmap",
     githubUrl: "https://github.com/kojikojiprg/ai-theories",
     productHuntUrl: null,
-    pricing: "Free",
+    pricing: { type: "free" },
     stack: ["Python", "PyTorch", "Jupyter", "Gradio", "Hugging Face Spaces"],
     launched: "2026-08",
   },
