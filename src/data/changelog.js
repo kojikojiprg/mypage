@@ -13,6 +13,14 @@
 export const changelog = [
   // ↓ 更新するたびにここに追加してください（新しい順）
   {
+    date: "2026-08-15",
+    type: "fix",
+    desc: {
+      ja: "AI Theoriesのサムネイル表示を修正し、demoUrlをsiteUrlに名称変更",
+      en: "Fixed AI Theories thumbnail display and renamed demoUrl to siteUrl",
+    },
+  },
+  {
     date: "2026-08-11",
     type: "content",
     desc: {

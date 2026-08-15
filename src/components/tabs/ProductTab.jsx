@@ -67,7 +67,7 @@ function ProductCard({ product, t }) {
         {/* Thumbnail — hidden on mobile via inline media query workaround */}
         <div className="product-thumb" style={{ flexShrink: 0, width: 160, height: 100, borderRadius: 2, overflow: "hidden", background: "var(--border)" }}>
           {product.thumbnail
-            ? <img src={product.thumbnail} alt={t(product.name)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            ? <img src={product.thumbnail} alt={t(product.name)} style={{ width: "100%", height: "100%", objectFit: product.thumbnailFit || "cover" }} />
             : null}
         </div>
 
@@ -103,10 +103,10 @@ function ProductCard({ product, t }) {
 
           {/* Links */}
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-            {product.demoUrl && (
-              <a href={product.demoUrl} target="_blank" rel="noopener noreferrer"
+            {product.siteUrl && (
+              <a href={product.siteUrl} target="_blank" rel="noopener noreferrer"
                 style={{ fontFamily: "var(--font-mono)", fontSize: "0.78rem", background: "var(--mint)", color: "#0A0E17", padding: "6px 16px", borderRadius: 2, border: "none", cursor: "pointer", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none" }}>
-                Demo →
+                View →
               </a>
             )}
             {product.githubUrl && (
